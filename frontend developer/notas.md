@@ -49,3 +49,21 @@ Cada elemento del código HTML se conforma del siguiente contenido:
         ````
         <img src="ejemplo.jpg" alt="ejemplo">
         ```
+- Anidamiento
+    Estas son etiquetas dentro de otras etiquetas, esto es regular en HTML. Esto dependera de la estructura que necesitemos.
+    - Ejemplo
+        ```
+            <section>
+                <h1>Hola Mundo</h1>
+            </section>
+            <!-- Una lista no organizada -->
+            <ul>
+                <!-- Elementos de la lista no ordenada -->
+                <li>Increíble</li>
+                <li>Maravilloso</li>
+                <li>Genial</li>
+        ```
+## Elementos de la estructura principal
+Para  ver la estrucutra de un archivo html da click [aquí](/)
+### Etiqueta Doctype
+Esta etiqueta especifica que el archivo se va a manejar con la versión 5 de HTML.
