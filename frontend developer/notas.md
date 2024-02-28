@@ -64,6 +64,21 @@ Cada elemento del código HTML se conforma del siguiente contenido:
                 <li>Genial</li>
         ```
 ## Elementos de la estructura principal
-Para  ver la estrucutra de un archivo html da click [aquí](/)
+Para  ver la estrucutra de un archivo html da click [aquí](/estructura.html)
 ### Etiqueta Doctype
 Esta etiqueta especifica que el archivo se va a manejar con la versión 5 de HTML.
+### Etiqueta html
+Esta etiqueta define el elemento raíz de un archivo HTML. Es la etiqueta madre y todos los demás elementos deben de estar dentro de esta etiqueta. Aquí se especifica el lenguaje de la página web con la propiedad **lang**
+### Etiqueta head
+Esta etiqueta define la **metainformación**, lo que quiere decir que estará toda la información que no es contenido de una página web. Aquí van los archivos CSS, JavaScript, el título y la imagen (favicoon) que aparece en la pestaña de navegación. Aquí también va más información que es importante para los ***motores de busqueda*** como Google.
+## HTML SEMÁNTICO
+En html tenemos la etiqueta ```<div>```, esta etiqueta nos sirve como contenedor pero carece de valor semántico lo que significa que no significan nada para los motores de busqueda como google.
+### Etiquetas Semánticas
+En el siguiente [archivo](/EtiquetasSemanticas.html) tenemos un ejemplo de etiquetas.
+Aquí tenemos el ejemplo con una imagen de cómo estas etiquetas podrían estar estructuradas en nuestra página web ![imagen de semántica html](/imagenes-de-apoyo/ejemploSemántica.png)
+***Es importante aclarar que todo esto podemos hacerlo con div pero no tendríamos las ventajas que se mencionan a continuación***
+### Ventajas de utilizar HTML semántico
+- Ayuda a tu sitio a ser accesible, esto es porque el sitio va a leer la etiqueta que es y ayuda con los programas de accesibilidad.
+- Mejora tu posicionamiento (SEO)
+- Código más claro, legible y mantenible, haras que otros desarrolladores o tu yo del futuro pueda entender a qué se refiere esa parte del contenido, ya que no tendrás puras etiquetas ```<div></div>``` anidadas.
+- Ayuda a buscadores (como Google a encontrar tu página)
