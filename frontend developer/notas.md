@@ -75,7 +75,7 @@ Esta etiqueta define la **metainformación**, lo que quiere decir que estará to
 En html tenemos la etiqueta ```<div>```, esta etiqueta nos sirve como contenedor pero carece de valor semántico lo que significa que no significan nada para los motores de busqueda como google.
 ### Etiquetas Semánticas
 En el siguiente [archivo](/EtiquetasSemanticas.html) tenemos un ejemplo de etiquetas.
-Aquí tenemos el ejemplo con una imagen de cómo estas etiquetas podrían estar estructuradas en nuestra página web ![imagen de semántica html](/imagenes-de-apoyo/ejemploSemántica.png)
+Aquí tenemos el ejemplo con una imagen de cómo estas etiquetas podrían estar estructuradas en nuestra página web ![imagen de semántica html](imagenes-de-apoyo/ejemploSemántica.png)
 ***Es importante aclarar que todo esto podemos hacerlo con div pero no tendríamos las ventajas que se mencionan a continuación***
 ### Ventajas de utilizar HTML semántico
 - Ayuda a tu sitio a ser accesible, esto es porque el sitio va a leer la etiqueta que es y ayuda con los programas de accesibilidad.
