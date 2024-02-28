@@ -26,3 +26,26 @@ Cada navegador tiene su propio motor de renderizado para poder "traducir" nuestr
 3. **Cálcula las dimensiones** de cada nodo y dónde va en la pantalla. 
 4. Pinta o renderiza los diferentes elementos como **cajas o contenedores** (las etiquetas que se muestran en el ejemplo)
 5. Agrupa todas las cajas en diferentes capas para **convertirlas en una imagen que se renderiza en pantalla**
+## Anatomía de un documento HTML y sus elementos
+Cada elemento del código HTML se conforma del siguiente contenido:
+
+- Etiquetas
+    - Este es la representación de un elemento html. Tiene una etiqueta de apertura y una de cierre.
+    - Ejemplo:
+        ```html
+        <h1></h1>
+        ```
+- Contenido
+    -   Es el texto o elemento que se encierra entre la etiqueta. Puede que tenga texto o no (Depende de la etiqueta)
+    - Ejemplo
+        ```
+        <h1>Este es el contenido</h1>
+        ```
+- Atributos
+    - Estos manejan el comprtamiento de un elemento, se escriben dentro de la etiqueta de inicio.
+- Elementos vacios
+    - Hay etiquetas que no tienen contenido y etiqueta de apertura, por lo general se les agrega atributos y este determina el comportamiento de dicha etiqueta
+    - Ejemplo
+        ````
+        <img src="ejemplo.jpg" alt="ejemplo">
+        ```
