@@ -140,6 +140,24 @@ Entre mayor especificidad, mayor va a ser la probabilidad de que sus declaracion
 
 ![Imagen de especificidad de platzi](imagenes-de-apoyo/Especificidad.png)
 
-[Aquí](https://specificity.keegan.st/)hay una calculadora de especificidad
+[Aquí](https://specificity.keegan.st/) hay una calculadora de especificidad
 
+## Tipo de display
+Es el tipo de visualización que tienen los elementos
 
+- block
+- inline
+    - No le podemos cambiar su anchura, no es posible agregarle todas las propiedades del modelo de caja excepto el margen horizontal.
+- inline-block
+    - Combina las ventajas de ambos como ponerle las propiedades del modelo de caja y el colocar un elemento seguido del otro en el mismo espacio.
+- flex
+    - recursos: 
+        - [juego para aprender](https://flexboxfroggy.com/#es)
+        - [documentación](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
+- grid
+    - recursos:
+        - [juego para aprender](https://cssgridgarden.com/)
+        - [documentación](https://css-tricks.com/snippets/css/complete-guide-grid/)
+        
+
+Todos los elementos ya tienen por defecto un tipoi de visualización, ya sea en bloque o en linea
