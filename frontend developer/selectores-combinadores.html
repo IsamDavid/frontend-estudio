@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Combinadores</title>
+    <style>
+        div span{
+            background-color: aquamarine;
+        }
+        div > .elemento-hijo{
+            background-color: brown;
+        }
+        p + p{
+            color: teal;
+        }
+        .hermano-general ~ p{
+             background-color: royalblue;
+             color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Selector descendientes -->
+    <h2>Selector descendientes</h2>
+    <div>
+        <span> A mi si me toma el estilo :D</span>
+        <section><span>Holaaa, también me toma aunque este dentro de otra etiqueta, sigo siendo un descendiente de la etiqueta div</span></section>
+    </div>
+    <span>A mi no me toma el estilo :( </span>
+    
+    
+    <!-- Selector hijo directo -->
+    <h2>Selector hijo directo</h2>
+    <div>
+        <p class="elemento-hijo"> A mi si me toma el estilo :D</p>
+        <section><p class="elemento-hijo">Ya no me toma el estilo aunque sea descendiente pero no soy hijo directo :(</p></section>
+        <p class="elemento-hijo">Soy otro hijo directo porque no estoy dentro de otra etiqueta</p>
+    </div>
+    <span>A mi no me toma el estilo :( </span>
+
+    <h2>Selector elemento adyacente</h2>
+    <!-- Selector elemento adyacente -->
+    <p>Seleccionaré a la de abajo de mi</p>
+    <p>La etiqueta de arriba me seleccionó, no tengo que ser elemento hijo del de arriba</p>
+    
+    <!-- Selector general de hermanos -->
+    <h2>Selector general de hermanos</h2>
+    
+    <p class="hermano-general">Soy el hermano general</p>
+    <p>Hermano 1</p>
+    <p>Hermano 2</p>
+    <p>Hermano 3</p>
+    <p>Hermano 4</p>
+
+</body>
+</html>

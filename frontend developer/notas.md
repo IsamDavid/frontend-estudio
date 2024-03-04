@@ -75,10 +75,69 @@ Esta etiqueta define la **metainformación**, lo que quiere decir que estará to
 En html tenemos la etiqueta ```<div>```, esta etiqueta nos sirve como contenedor pero carece de valor semántico lo que significa que no significan nada para los motores de busqueda como google.
 ### Etiquetas Semánticas
 En el siguiente [archivo](/EtiquetasSemanticas.html) tenemos un ejemplo de etiquetas.
-Aquí tenemos el ejemplo con una imagen de cómo estas etiquetas podrían estar estructuradas en nuestra página web ![imagen de semántica html](imagenes-de-apoyo/ejemploSemántica.png)
+Aquí tenemos el ejemplo con una imagen de cómo estas etiquetas podrían estar estructuradas en nuestra página web. También estas son las etiquetas más utilizadas de html para la parte del layout. ![imagen de semántica html](imagenes-de-apoyo/ejemploSemántica.png)
 ***Es importante aclarar que todo esto podemos hacerlo con div pero no tendríamos las ventajas que se mencionan a continuación***
 ### Ventajas de utilizar HTML semántico
 - Ayuda a tu sitio a ser accesible, esto es porque el sitio va a leer la etiqueta que es y ayuda con los programas de accesibilidad.
 - Mejora tu posicionamiento (SEO)
 - Código más claro, legible y mantenible, haras que otros desarrolladores o tu yo del futuro pueda entender a qué se refiere esa parte del contenido, ya que no tendrás puras etiquetas ```<div></div>``` anidadas.
 - Ayuda a buscadores (como Google a encontrar tu página)
+
+Esta es una [documentación de HTML](https://htmlreference.io/)
+### Etiquetas con diferencias semánticas
+La etiqueta ```<b>``` pone el texto en negritas pero no tiene sentido semántico.
+La etiqueta ```<strong>``` pone el texto en negritas pero SI tiene sentido semántico.
+La etiqueta ```<i>``` pone el texto en cursivas pero no tiene sentido semántico.
+La etiqueta ```<em>``` pone el texto en cursivas pero SI tiene sentido semántico.
+
+## Maquetación con CSS
+
+### Declaración CSS
+La declaración CSS es un bloque de código que especifica los estilos que tendrá un elemento HTML en específico. Su estructura es la siguiente:
+
+- Selector: define el elemento o conjunto de elementos a los cuales se añadirán los estilos.
+- Propiedad: es el nombre del estilo de CSS.
+- Valor: es el valor que tomará la propiedad.
+
+### Tipos de selectores
+- De tipo: div {...}
+    - La etiqueta que vamos a estilizar en general, puede servir para cuando hacemos páginas pequeñas.
+- De clase: .elemento {...}
+    - Este estilo solamente lo tomaran los elementos que les asignemos tal nombre, esto se hace poniendo un atributo llamado "class" en la etiqueta. 
+- De ID: #id-del-elemento {...}
+    - Este estilo lo tomará el elemento que nombremos con tal ID, la diferencia con los selectores de clase es que solamente puedes tener un único elemento con dicho nombre. No es repetible el ID para más de un elemento. 
+- De atributo: a[href=" "] {...}
+    - Se puede estilizar los atributos
+- Universal: * {...}
+    - Todos los elementos se estilizan con lo que se agregue aquí
+
+### Selectores combinadores
+- Descendientes: div p
+- Hijo directo: div > p
+- Elemento adyacente: div + p
+- General de hermanos: div ~ p
+En el siguiente [enlace](/selectores-combinadores.html) podemos ver en código la explicación de estos selectores
+
+### Pseudoclases y Psudoelementos
+
+|Pseudoclases|Pseudoelementos|
+|---|---|
+|:active|::after|
+|:focus|::before|
+|:hover|::first-letter|
+|:nth-child(n)|::placeholder|
+
+Los psudoelementos por ejemplo nos permiten llegar a los elementos que no son accesibles con html como el estilizar una letra de un elemento. 
+
+### Cascada y especificidad en CSS
+El orden importa en CSS. Esto porque puede llegar a sobreescribir con los estilos que pongamos abajo.
+Los navegadores determinan qué reglas de Css deben aplicarse a las etiquetas HTML. El orden y el origen de clasificación del CSS, intervienen en este proceso. 
+Sin embragom, no todo es color de rosa. A veces los navegadores entran en conflicto porque no saben qué regla aplicar. 
+Es gracias a la especificidad de los selectores resuelven este problema. 
+Entre mayor especificidad, mayor va a ser la probabilidad de que sus declaraciones se usen sobre las demás.
+¿Cómo podemos saber qué reglas de CSS tienen mayor especificidad?
+
+![Imagen de especificidad de platzi](/imagenes-de-apoyo/Especificidad.png)
+[Aquí](https://specificity.keegan.st/) hay una calculadora de especificidad
+
+
