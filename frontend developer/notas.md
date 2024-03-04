@@ -139,8 +139,7 @@ Entre mayor especificidad, mayor va a ser la probabilidad de que sus declaracion
 ¿Cómo podemos saber qué reglas de CSS tienen mayor especificidad?
 
 ![Imagen de especificidad de platzi](imagenes-de-apoyo/Especificidad.png)
-[Aquí](https://specificity.keegan.st/)
 
-hay una calculadora de especificidad
+[Aquí](https://specificity.keegan.st/)hay una calculadora de especificidad
 
 
