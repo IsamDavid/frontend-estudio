@@ -76,6 +76,7 @@ En html tenemos la etiqueta ```<div>```, esta etiqueta nos sirve como contenedor
 ### Etiquetas Semánticas
 En el siguiente [archivo](EtiquetasSemanticas.html) tenemos un ejemplo de etiquetas.
 Aquí tenemos el ejemplo con una imagen de cómo estas etiquetas podrían estar estructuradas en nuestra página web. También estas son las etiquetas más utilizadas de html para la parte del layout. ![imagen de semántica html](imagenes-de-apoyo/ejemploSemántica.png)
+
 ***Es importante aclarar que todo esto podemos hacerlo con div pero no tendríamos las ventajas que se mencionan a continuación***
 ### Ventajas de utilizar HTML semántico
 - Ayuda a tu sitio a ser accesible, esto es porque el sitio va a leer la etiqueta que es y ayuda con los programas de accesibilidad.
@@ -138,6 +139,8 @@ Entre mayor especificidad, mayor va a ser la probabilidad de que sus declaracion
 ¿Cómo podemos saber qué reglas de CSS tienen mayor especificidad?
 
 ![Imagen de especificidad de platzi](imagenes-de-apoyo/Especificidad.png)
-[Aquí](https://specificity.keegan.st/) hay una calculadora de especificidad
+[Aquí](https://specificity.keegan.st/)
+
+hay una calculadora de especificidad
 
 
