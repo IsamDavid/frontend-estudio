@@ -64,7 +64,7 @@ Cada elemento del código HTML se conforma del siguiente contenido:
                 <li>Genial</li>
         ```
 ## Elementos de la estructura principal
-Para  ver la estrucutra de un archivo html da click [aquí](/estructura.html)
+Para  ver la estrucutra de un archivo html da click [aquí](estructura.html)
 ### Etiqueta Doctype
 Esta etiqueta especifica que el archivo se va a manejar con la versión 5 de HTML.
 ### Etiqueta html
@@ -74,7 +74,7 @@ Esta etiqueta define la **metainformación**, lo que quiere decir que estará to
 ## HTML SEMÁNTICO
 En html tenemos la etiqueta ```<div>```, esta etiqueta nos sirve como contenedor pero carece de valor semántico lo que significa que no significan nada para los motores de busqueda como google.
 ### Etiquetas Semánticas
-En el siguiente [archivo](/EtiquetasSemanticas.html) tenemos un ejemplo de etiquetas.
+En el siguiente [archivo](EtiquetasSemanticas.html) tenemos un ejemplo de etiquetas.
 Aquí tenemos el ejemplo con una imagen de cómo estas etiquetas podrían estar estructuradas en nuestra página web. También estas son las etiquetas más utilizadas de html para la parte del layout. ![imagen de semántica html](imagenes-de-apoyo/ejemploSemántica.png)
 ***Es importante aclarar que todo esto podemos hacerlo con div pero no tendríamos las ventajas que se mencionan a continuación***
 ### Ventajas de utilizar HTML semántico
@@ -116,7 +116,7 @@ La declaración CSS es un bloque de código que especifica los estilos que tendr
 - Hijo directo: div > p
 - Elemento adyacente: div + p
 - General de hermanos: div ~ p
-En el siguiente [enlace](/selectores-combinadores.html) podemos ver en código la explicación de estos selectores
+En el siguiente [enlace](selectores-combinadores.html) podemos ver en código la explicación de estos selectores
 
 ### Pseudoclases y Psudoelementos
 
