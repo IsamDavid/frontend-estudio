@@ -137,7 +137,7 @@ Es gracias a la especificidad de los selectores resuelven este problema.
 Entre mayor especificidad, mayor va a ser la probabilidad de que sus declaraciones se usen sobre las demás.
 ¿Cómo podemos saber qué reglas de CSS tienen mayor especificidad?
 
-![Imagen de especificidad de platzi](/imagenes-de-apoyo/Especificidad.png)
+![Imagen de especificidad de platzi](imagenes-de-apoyo/Especificidad.png)
 [Aquí](https://specificity.keegan.st/) hay una calculadora de especificidad
 
 
