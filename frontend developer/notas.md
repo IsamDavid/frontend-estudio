@@ -160,4 +160,17 @@ Es el tipo de visualización que tienen los elementos
         - [documentación](https://css-tricks.com/snippets/css/complete-guide-grid/)
         
 
-Todos los elementos ya tienen por defecto un tipoi de visualización, ya sea en bloque o en linea
+Todos los elementos ya tienen por defecto un tipo de visualización, ya sea en bloque o en linea.
+## Modelo de caja
+Todos los elementos están compuestos por un modelo de caja, este modelo de caja se compone de cuatro elementos:
+- margin
+    - este es el espaciado entre el borde y otro elemento, podemos verlo como el espaciado exterior de un elemento con otro.
+- border
+    - Es esa linea que representa nuestro elemento, si lo vemos en terminos de figuras esta sería la línea que se dibuja (el contorno). Lo podemos estilizar o simplemente ocultar dicha línea si no queremos que se vea.
+- padding
+    - Es el espaciado entre el borde y el elemento, este es un espaciado interior por lo cual no afectaría a la separación con otro elemento, afectará el espacio interior de este elemento.
+- contenido
+    - Lo que ponemos dentro de nuestro elemento como puede ser texto, una imagen, figuras, etc.
+
+### Ejemplo del modelo de caja
+![Representación del modelo de caja](imagenes-de-apoyo/modelo-caja.png)
