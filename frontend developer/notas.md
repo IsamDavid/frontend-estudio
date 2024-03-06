@@ -163,14 +163,34 @@ Es el tipo de visualización que tienen los elementos
 Todos los elementos ya tienen por defecto un tipo de visualización, ya sea en bloque o en linea.
 ## Modelo de caja
 Todos los elementos están compuestos por un modelo de caja, este modelo de caja se compone de cuatro elementos:
-- margin
+- ***margin***
     - este es el espaciado entre el borde y otro elemento, podemos verlo como el espaciado exterior de un elemento con otro.
-- border
+- ***border***
     - Es esa linea que representa nuestro elemento, si lo vemos en terminos de figuras esta sería la línea que se dibuja (el contorno). Lo podemos estilizar o simplemente ocultar dicha línea si no queremos que se vea.
-- padding
+- ***padding***
     - Es el espaciado entre el borde y el elemento, este es un espaciado interior por lo cual no afectaría a la separación con otro elemento, afectará el espacio interior de este elemento.
-- contenido
+- ***contenido***
     - Lo que ponemos dentro de nuestro elemento como puede ser texto, una imagen, figuras, etc.
 
 ### Ejemplo del modelo de caja
 ![Representación del modelo de caja](imagenes-de-apoyo/modelo-caja.png)
+
+### Valores por defecto
+El navegador asigna algunos valores CSS a algunos elementos, por lo cual es buena práctica que a nuestros proyectos los empecemos con el siguiente formateo:
+```
+* {
+    margin: 0;
+    padding: 0;
+}
+```
+### Tamaño total del elemento
+Como lo vimos en la imagen, cada parte del modelo de la caja puede tener un tamaño, si le agregamos el contenido este tendrá un tamaño pero si lo estilizamos le podemos definir un total de ancho y alto. Si agregamos un borde y un padding entonces esta medida aumentará. El tamaño total de este elemento ya no solo dependerá de la medida de ancho y alto que le pongamos con CSS, también se le tendrá que sumar el padding y border.
+Si necesitamos que nuestro elemento tenga si o si la medida que le hemos puesto de alto y ancho entonces podemos poner la siguiente propiedad de CSS:
+```
+* {
+  box-sizing: border-box;
+}
+```
+Esta propiedad ***box-sizing*** establece cómo se calculará el ancho y el alto si incluye bordes y espacios internos. 
+Es importante destacar que a nuestros elementos debemos de ***Evita agregar un tamaño diferente al inicial.***
+Por ejemplo, si queremos que adopten cierto comportamiento cuando pasemos el mouse sobre un elemento y este tenga ahora un borde, entonces estaríamos modificando nuestro contenido y medidas del modelo de caja. Esto provocaría que tengmos una animación un tanto rara, por lo que la solución sería que prevengamos antes esto y le pongamos un borde transparente antes para que no tenga un efecto raro.
