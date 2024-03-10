@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colapso de Margenes</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    p{
+        margin: 30px 0 30px 0;
+    }
+    /* El contenedor de estos dos parrafos es de tipo flexbox, también funciona con css grid */
+    .sin_colapso{
+        display: flex;
+        flex-direction: column;
+    }
+    .sin_colapso p + p{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <!-- Colapso -->
+    <p>Azul</p>
+    <p>Rojo</p>
+
+    <!--Sin colapso -->
+    <div class="sin_colapso">
+        <p>Agua</p>
+        <p>Fuego</p>
+    </div>
+</body>
+</html>

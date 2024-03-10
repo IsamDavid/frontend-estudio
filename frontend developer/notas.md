@@ -196,4 +196,5 @@ Es importante destacar que a nuestros elementos debemos de ***Evita agregar un t
 Por ejemplo, si queremos que adopten cierto comportamiento cuando pasemos el mouse sobre un elemento y este tenga ahora un borde, entonces estaríamos modificando nuestro contenido y medidas del modelo de caja. Esto provocaría que tengmos una animación un tanto rara, por lo que la solución sería que prevengamos antes esto y le pongamos un borde transparente antes para que no tenga un efecto raro.
 
 ### Colapso de margenes
-Si nuestros elementos estan dentro de un display block entonces nuestros margenes verticales se van a colapsar, esto lo podemos solucionar cambiando el tipo de display. 
+Si nuestros elementos estan dentro de un display block entonces nuestros margenes verticales se van a colapsar, esto lo podemos solucionar cambiando el tipo de display.
+Aquí el ejemplo con ![código](colapso-margenes.html)
