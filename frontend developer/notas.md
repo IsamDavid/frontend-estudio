@@ -198,3 +198,19 @@ Por ejemplo, si queremos que adopten cierto comportamiento cuando pasemos el mou
 ### Colapso de margenes
 Si nuestros elementos estan dentro de un display block entonces nuestros margenes verticales se van a colapsar, esto lo podemos solucionar cambiando el tipo de display.
 Aquí el ejemplo con [código](colapso-margenes.html)
+
+### Posicionamiento
+Esta propiedad de CSS nos ayuda para ubicar un elemento en nuestra página. 
+Tenemos los siguientes:
+- Relative
+    - Aquí las propiedades de posición si pueden ser establecidas. Podemos modificar con top, left, right, bottom
+- Absolute
+    - Este ya no respeta el flujo del documento, por lo que podemos posicionar a nuestro gusto el elemento. Este no se va a salir del elemento contenedor padre más próximo con posición relativa.
+- Fixed
+    - Es la posición fija, se usa por ejemplo con los menús que se quedan mientras hacemos scroll.
+- Sticky
+    - Con este el elemento se queda fijo cuando llegamos a hacerle scroll, se reemplaza con el siguiente elemento que tenga posicionamiento sticky.
+- Static
+    - Es el valor que vienen los elementos html por defecto. Respeta el flujo normal del documento.
+- Initial
+- Inherital
