@@ -197,4 +197,4 @@ Por ejemplo, si queremos que adopten cierto comportamiento cuando pasemos el mou
 
 ### Colapso de margenes
 Si nuestros elementos estan dentro de un display block entonces nuestros margenes verticales se van a colapsar, esto lo podemos solucionar cambiando el tipo de display.
-Aquí el ejemplo con ![código](colapso-margenes.html)
+Aquí el ejemplo con [código](colapso-margenes.html)
