@@ -193,7 +193,7 @@ Si necesitamos que nuestro elemento tenga si o si la medida que le hemos puesto 
 ```
 Esta propiedad ***box-sizing*** establece cómo se calculará el ancho y el alto si incluye bordes y espacios internos. 
 Es importante destacar que a nuestros elementos debemos de ***Evita agregar un tamaño diferente al inicial.***
-Por ejemplo, si queremos que adopten cierto comportamiento cuando pasemos el mouse sobre un elemento y este tenga ahora un borde, entonces estaríamos modificando nuestro contenido y medidas del modelo de caja. Esto provocaría que tengmos una animación un tanto rara, por lo que la solución sería que prevengamos antes esto y le pongamos un borde transparente antes para que no tenga un efecto raro.
+Por ejemplo, si queremos que adopten cierto comportamiento cuando pasemos el mouse sobre un elemento y este tenga ahora un borde, entonces estaríamos modificando nuestro contenido y medidas del modelo de caja. Esto provocaría que tengamos una animación un tanto rara, por lo que la solución sería que prevengamos antes esto y le pongamos un borde transparente antes para que no tenga un efecto raro.
 
 ### Colapso de margenes
 Si nuestros elementos estan dentro de un display block entonces nuestros margenes verticales se van a colapsar, esto lo podemos solucionar cambiando el tipo de display.
@@ -214,3 +214,27 @@ Tenemos los siguientes:
     - Es el valor que vienen los elementos html por defecto. Respeta el flujo normal del documento.
 - Initial
 - Inherital
+### Unidades de medida
+- Absolutas
+    - Estas medidas no dependen de absolutamente nadie más para ser ellas mismas. 
+    - Ejemplos: px, pt, pc, in, cm, mm
+- Relativas
+    - Estas sí dependen de alguién más. 
+    - Ejemplos: rem, em, vw, vh, vmin, vmax, ex, ch, porcentajes
+    - Porcentajes
+        - Dependen su tamaño del elemento padre
+        - Este tamaño de porcentaje también va a variar dependiendo del navegador, por ejemplo, son diferentes en chrome y en safari
+    - Rem y Em
+        - Dependen del font-size 
+    - vw y vh
+        - Dependen del tamaño del viewport
+
+Un ***rem*** equivale a ***16px***
+
+La unidad de medida Rem tiene un cálculo matématico que sirve para que los podamos utilizar como px. Esto se hace para no hacer estos cálculos de saber cuántos px equivalen 2.4 rem, etc. Se hace en en la etiqueta ***html***
+Buscamos que esa equivalencia sea de un 10% para que al poner 4.5rem sepamos que equivale 45px. 
+Hacemos ***font-size: 62.5%;*** porque: 
+100% - 16px
+  "-"    -10px
+Esto nos da como resultado 62.5% 
+

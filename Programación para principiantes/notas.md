@@ -1,7 +1,7 @@
 # Notas Fundamentos de programación
 
 > [!TIP]
-> La programación es un arte, también es el arte de que otros programadores puedan leer tu código y sea legible, sin nececidad de escribir grandes comentarios o extensa documentación.
+> La programación es un arte y no solo de crear algortimos o aplicaciones, también es el arte de que otros programadores puedan leer tu código y sea legible, sin nececidad de escribir grandes comentarios o extensa documentación.
 
 ## Lenguaje de programación
 ### Bajo nivel
