@@ -214,6 +214,8 @@ Tenemos los siguientes:
     - Es el valor que vienen los elementos html por defecto. Respeta el flujo normal del documento.
 - Initial
 - Inherital
+### etiqueta Figure
+La etiqueta figure nos puede servir como un contenedor al igual que el div pero este es un elemento semántico html, nos sirve como el contenedor de una imagen. Esta etiqueta viene por defecto con un margen, por lo que debemos de ser necesario lo podemos quitar
 ### Unidades de medida
 - Absolutas
     - Estas medidas no dependen de absolutamente nadie más para ser ellas mismas. 
@@ -237,4 +239,62 @@ Hacemos ***font-size: 62.5%;*** porque:
 100% - 16px
   "-"    -10px
 Esto nos da como resultado 62.5% 
+Aquí el ejemplo en [código](unidades-de-medida.html)
 
+### Responsive Design
+Que tu sitio se vea bien en varias medidas de pantalla
+Esto lo logramos con las media queries, nos sirven para decirle que queremos que ciertos elementos cambien de valores dependiendo del tamaño de nuestra pantalla.  
+```
+@media (max-width: 375px){
+    .clase-que-quiero-que-cambie{
+        propiedad: valor;
+    }
+}
+```
+Aquí el ejemplo en [código]()
+
+### Variables en CSS
+Las variables nos sirven para almacenar valores como lo pueden ser los colores. Sirve que si nos piden cambiar un color de todo nuestro proyecto entonces solamente hacemos el cambio a la variable y no en todos los elementos donde hicimos el cambio de color.
+Esto lo hacemos con 
+```
+root{
+    --nombreVariable: 
+}
+```
+Esto solamente es para declarar nuestras variables con su valor. Para usarlas en nuestras propiedades debemos de hacer lo siguiente:
+```
+    font-size: var(--nombreVariable);
+```
+### Buenas prácticas en CSS 
+Se recomienda que en cada propiedad de css que le estemos agregando estilos los ordenemos de la siguiente manera:
+1. Posicionamiento
+2. Box model
+3. Tipografías
+4. Visuales
+5. Otros 
+Cada categoría se separa por un salto de linea para una mayor legibilidad 
+
+### Centrar un contenido con CSS grid
+Podemos centrar un contenido con css grid de la siguiente manera: 
+```
+    display: grid;
+    place-items:center;
+```
+la propiedad place-items para contenedores grid junta align-items y justify-items.
+Esta es la sintaxis:
+```
+    place-items: <align-items> <justify-items>;
+```
+Estas propiedades
+```
+justify-self: <start><center><end><stretch>;
+align-self: <start><center><end><stretch>;
+```
+Nos sirven para poder mover de posición nuestros items, los elementos hijos de un contenedor padre con display grid.
+
+### grid-template-colums
+Con este le decimos al navegador cuántas columnas queremos tener, existe una función para repetir el número de columnas que queremos y el tamaño de cada una de ellas pero también existe un valor llamado ***auto-fill*** que ayuda a que se pongan todos los items que quepan en nuestra columna, solamente tenemos que agregarle el tamaño de cada una de ellas.
+Ejemplo:
+```
+grid-template-columns: repeat(auto-fill, 240px);
+```
